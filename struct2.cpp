@@ -11,22 +11,29 @@ struct detailAlamat{
 struct mahasiswa{
     string nim;
     string nama;
-    string alamat;
+    detailAlamat alamat;
 };
 
 int main(){
     mahasiswa mhs;
 
-    mhs.nim ="20240140001";
-    mhs.nama ="Abra";
-    mhs.alamat ="Kasihan";
-
     cout << "Masukan NIM = ";
     cin >> mhs.nim;
     cout << "Masukan Nama = ";
     cin >> mhs.nama;
-    cout << "Masukan Alamat =";
-    cin >> mhs.alamat;
+    cout << "Masukan Alamat Desa =";
+    cin >> mhs.alamat.desa;
+    cout << "Masukan Alamat Kota =";
+    cin >> mhs.alamat.kota;
 
+
+cout << endl;
+cout << "Data Mahasiswa" << endl;
+
+cout << "NIM = " << mhs.nim << endl;
+cout << "Nama = " << mhs.nama << endl;
+cout << "Alamat Desa = " << mhs.alamat.desa << endl;
+cout << "Alamat Kota = " << mhs.alamat.kota << endl;
 
 }
+
