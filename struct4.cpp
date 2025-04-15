@@ -16,27 +16,27 @@ struct mahasiswa{
 };
 
 int main(){
-    mahasiswa mhs;
+    mahasiswa mhs[1];
 
     for(int i = 0; i < 2; i++){
     cout << "Masukan NIM = ";
-    cin >> mhs.nim;
+    cin >> mhs[1].nim;
     cin.ignore();
     cout << "Masukan Nama = ";
-    getline(cin, mhs.nama);
+    getline(cin, mhs[1].nama);
     cout << "Masukan Alamat Desa =";
-    cin >> mhs.alamat.desa;
+    cin >> mhs[1].alamat.desa;
     cout << "Masukan Alamat Kota =";
-    cin >> mhs.alamat.kota;
+    cin >> mhs[1].alamat.kota;
     }
 
 cout << endl;
 cout << "Data Mahasiswa" << endl;
 
-cout << "NIM = " << mhs.nim << endl;
-cout << "Nama = " << mhs.nama << endl;
-cout << "Alamat Desa = " << mhs.alamat.desa << endl;
-cout << "Alamat Kota = " << mhs.alamat.kota << endl;
+cout << "NIM = " << mhs[1].nim << endl;
+cout << "Nama = " << mhs[1].nama << endl;
+cout << "Alamat Desa = " << mhs[1].alamat.desa << endl;
+cout << "Alamat Kota = " << mhs[1].alamat.kota << endl;
 
 }
 
